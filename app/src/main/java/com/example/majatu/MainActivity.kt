@@ -1,5 +1,6 @@
 package com.example.majatu
 
+import android.content.Intent
 import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -39,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             if (baton.text == "next") {
                 numerPokazywanejFiszki += 1
                 if (listaFiszek.size == numerPokazywanejFiszki) {
-                    numerPokazywanejFiszki = 0
+                    startLevel2Activity()
                 }
                 pokazanaFiszka = listaFiszek[numerPokazywanejFiszki]
                 poleTekstowePolskiegoSlowa.text = pokazanaFiszka.polskieSlowo
@@ -52,5 +53,10 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+    }
+
+    fun startLevel2Activity() {
+        val intent = Intent(this, Level2Activity::class.java)
+        startActivity(intent)
     }
 }
