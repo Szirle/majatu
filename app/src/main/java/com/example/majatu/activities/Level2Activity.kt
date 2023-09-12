@@ -13,6 +13,13 @@ class Level2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_level_2)
 
+        wyswietlFiszki()
+    }
+
+
+
+    fun wyswietlFiszki(){
+
         val listaFiszek = listOf<FiszkaLevel2>(
             FiszkaLevel2(polskieSlowo = "Auto", gitTlumaczenie = "La Macchina", listOf("Wrooooom", "Machinacina", "L'aereoaf")),
             FiszkaLevel2(
@@ -39,17 +46,8 @@ class Level2Activity : AppCompatActivity() {
 
         val wyswietlanaFiszka = listaFiszek[0]
         polskieSlowo.text = wyswietlanaFiszka.polskieSlowo
-        val randomInt: Int = Random.nextInt(1, 5)
+        val numerBatona: Int = Random.nextInt(1, 5)
 
-
-
-
-
-    }
-
-
-
-    fun wyswietlFiszki(numerBatona: Int, wyswietlanaFiszka: FiszkaLevel2){
         if (numerBatona == 1) {
             przyciskOdp1.text = wyswietlanaFiszka.gitTlumaczenie
             przyciskOdp2.text = wyswietlanaFiszka.zleTlumaczenia[0]
@@ -74,5 +72,7 @@ class Level2Activity : AppCompatActivity() {
             przyciskOdp2.text = wyswietlanaFiszka.zleTlumaczenia[1]
             przyciskOdp3.text = wyswietlanaFiszka.zleTlumaczenia[2]
         }
+
+
     }
 }
