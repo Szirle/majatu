@@ -47,6 +47,8 @@ class Level2Activity : AppCompatActivity() {
 
     }
 
+
+
     fun wyswietlFiszki(numerBatona: Int, wyswietlanaFiszka: FiszkaLevel2){
         if (numerBatona == 1) {
             przyciskOdp1.text = wyswietlanaFiszka.gitTlumaczenie
