@@ -4,52 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivity">
+    tools:context=".activities.StartNextLevelActivity">
+
+    <Button
+        android:id="@+id/baton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lewel 2"
+        app:backgroundTint="#009688"
+        app:fontFamily="@font/alice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/polskieSlowo2"
+        app:layout_constraintVertical_bias="0.827" />
 
     <TextView
-        android:id="@+id/polskieSlowo"
+        android:id="@+id/polskieSlowo2"
         style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MAJATU"
+        android:gravity="center"
+        android:text="essa mordo dawaj lvl 2 "
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textColor="#8BC34A"
         app:fontFamily="@font/alice"
-        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.207" />
-
-    <TextView
-        android:id="@+id/wloskieTlumaczenie"
-        style="@style/Widget.AppCompat.TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="MAJATU"
-        android:gravity="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        android:textColor="#8BC34A"
-        android:visibility="invisible"
-        app:fontFamily="@font/alice"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/polskieSlowo" />
-
-    <Button
-        android:id="@+id/baton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="poka odpowiedź"
-        app:backgroundTint="#009688"
-        app:fontFamily="@font/alice"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wloskieTlumaczenie" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

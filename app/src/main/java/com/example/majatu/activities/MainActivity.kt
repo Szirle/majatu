@@ -1,13 +1,13 @@
-package com.example.majatu
+package com.example.majatu.activities
 
 import android.content.Intent
-import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
+import com.example.majatu.R
+import com.example.majatu.classes.Fiszka
 
 
 class MainActivity : AppCompatActivity() {
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun startLevel2Activity() {
-        val intent = Intent(this, Level2Activity::class.java)
+        val intent = Intent(this, StartNextLevelActivity::class.java)
         startActivity(intent)
     }
 }
